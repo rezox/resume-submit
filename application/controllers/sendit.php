@@ -83,7 +83,11 @@ class Sendit extends CI_Controller {
       $this->email->message($message);
       $this->email->attach($resume);
 
-      $this->email->send();
+      if (!$this->email->send())
+      {
+         echo "Oops! Please try again!";
+         return;
+      }
 
       // Sending confirmation email.
       $this->email->clear();
@@ -95,7 +99,13 @@ class Sendit extends CI_Controller {
       $message = "We're just letting you know that we've received your application and because you've got to the end, your application has been given priority. If our team deems you as a good match, we will get in contact with you.\n\n -- The Noise Team @ New York";
 
       $this->email->message($message);
-      $this->email->send();
+
+
+      if (!$this->email->send())
+      {
+         echo "Oops! Please try again!";
+         return;
+      }
 
       echo "Success!";
       return;
