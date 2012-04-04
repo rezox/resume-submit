@@ -23,5 +23,7 @@ HtIVMN98qvhJrNe5cPdldfqrbLojbn7f/i1pNmFKcnnfGzVOAnPxyhDPbtwz2pZh
 UNUK/CZLxqMtqYUt/swxadBwKC20aBGDa7XmcH9sv+8iGzD/ShI99gMCFA4OFyr2
 Cw5TpYTGAzhrAJY6ZlSc
 -----END DSA PRIVATE KEY-----</pre>
+      <h2>Stuck?</h2>
+      <p>If a position you're applying to has nothing to do with development or if you're simply stuck, you can always send us your resume at <a href="mailto:jobs@noisenewyork.com">jobs@noisenewyork.com</a> with the subject line as "Software Engineer - github".</p>
    </div>
 </div>

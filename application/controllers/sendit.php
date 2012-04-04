@@ -63,15 +63,22 @@ class Sendit extends CI_Controller {
       $this->load->library('email');
 
       $this->email->from($doc['email_address'], $doc['full_name']);
-      $this->email->to('steve@noisenewyork.com');
-      //$this->email->to('jobs@noisenewyork.com');
-      $this->email->subject('Software Engineer - jobtest');
+      //$this->email->to('steve@noisenewyork.com');
+      $this->email->to('jobs@noisenewyork.com');
+      $this->email->subject('Software Engineer - Priority');
 
       $message = "The applicant completed the application process.\n\n";
-      $message = "Q. Write a snippet of code which shows a function ana variable within the same object using Javascript.\nA. ";
+      $message .= "Q. Write a snippet of code which shows a function ana variable within the same object using Javascript.\nA. ";
       $message .= $doc['q1'];
       $message .= "\n\nQ. Briefly explain what a MVC (Model-View-Controller) is and why it's not smart to run a a function call in a view.\nA. ";
       $message .= $doc['q2'];
+      $message .= "\n\n";
+      $message .= "Full Name:";
+      $message .= $doc['full_name'];
+      $message .= "\nEmail Address:";
+      $message .= $doc['email_address'];
+      $message .= "\nPhone Number:";
+      $message .= $doc['phone_number'];
 
       $this->email->message($message);
       $this->email->attach($resume);
