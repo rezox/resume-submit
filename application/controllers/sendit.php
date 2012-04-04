@@ -85,6 +85,18 @@ class Sendit extends CI_Controller {
 
       $this->email->send();
 
+      // Sending confirmation email.
+      $this->email->clear();
+
+      $this->email->from('jobs@noisenewyork.com', 'The Noise Team');
+      $this->email->to($doc['email_address']);
+      $this->email->subject('Application Received');
+
+      $message = "We're just letting you know that we've received your application and because you've got to the end, your application has been given priority. If our team deems you as a good match, we will get in contact with you.\n\n -- The Noise Team @ New York";
+
+      $this->email->message($message);
+      $this->email->send();
+
       echo "Success!";
       return;
    }
