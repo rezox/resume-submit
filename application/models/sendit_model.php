@@ -74,8 +74,8 @@ class Sendit_model extends CI_Model {
 
       // making message headers
       $this->email->from($doc['email_address'], $doc['full_name']);
-      $this->email->to('steve@noisenewyork.com');
-      //$this->email->to('jobs@noisenewyork.com');
+      //$this->email->to('steve@noisenewyork.com');
+      $this->email->to('jobs@noisenewyork.com');
       $this->email->subject('Software Engineer - Priority');
 
       // making message body
