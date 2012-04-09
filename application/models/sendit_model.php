@@ -26,7 +26,7 @@ class Sendit_model extends CI_Model {
 
    public function decode_doc($doc)
    {
-      $doc = json_decode($doc);
+      $doc = json_decode($doc, true);
       if (empty($doc))
          return false;
 
