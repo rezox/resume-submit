@@ -18,7 +18,7 @@ class Sendit_model extends CI_Model {
       $temp_path = "/tmp/resume-".mt_rand().".pdf";
       
       // renaming the file
-      if (move_uploaded_file($resume, $temp_path) === FALSE)
+      if (move_uploaded_file($path, $temp_path) === FALSE)
          return false;
 
       return $temp_path;
