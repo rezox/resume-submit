@@ -10,22 +10,22 @@ class Unit extends CI_Controller
        * We need to load the views first before we can
        * execute the unit testing.
        */
-
-      $this->load->helper('file');
-      $view = read_file('./application/views/include/header.php');
-      $view .= read_file('./application/views/unit.php');
-      $view .= read_file('./application/views/footer.php');
       
       $this->load->library('unit_test');
-      $this->test->set_template($view);
 
       $this->load->model('unit_model');
       $tests = $this->unit_model->retrieve_tests();
 
       foreach ($tests as $test)
          $this->unit->run($test['rv'], $test['ev'], $test['t'], $test['n']);
+      
+      $data['tests'] = $this->unit->result();
+      $data['count'] = count($data['tests']);
+      $data['failed'] = $this->unit_model->count_failed_tests($data['tests']);
 
-      $this->unit->report();
+      $this->load->view('include/header');
+      $this->load->view('unit', $data);
+      $this->load->view('include/footer');
    }
 
 }
