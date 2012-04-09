@@ -11,14 +11,14 @@ class Sendit extends CI_Controller {
          return;
       }
 
-      $this->load->model('sendit_model');
-
       // If any of these are empty, its bad.
       if (empty($_POST['mydoc']) || empty($_FILES['myresume']))
       {
          echo "You're missing something.";
          return;
       }
+
+      $this->load->model('sendit_model');
 
       // renaming the file
       if (!$resume = $this->sendit_model->move_file($_FILES['myresume']['tmp_name']))
