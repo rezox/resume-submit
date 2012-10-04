@@ -12,17 +12,17 @@
       <p>We are giving you a key and a URL, it is up to you how to use it. It will contain the next step of this test.</p>
       <pre>git@github.com:sjlu/Noise.git</pre>
       <pre>-----BEGIN DSA PRIVATE KEY-----
-MIIBuwIBAAKBgQDk19ywDpuOgury/J0zCCi81MYioSgsfNKIs98QxYVIee48CzPm
-c4P0yD4McIYxfXbm3sWPgwhz6irWdA9GgxcbfpV0GiQFXEXrDqok71Ww8f9RVrzK
-TXY8q8S6Zn5kQmBv+j4F5SRAKgCWuinIxyOx2kwVORBb1iFRD8nualgSkQIVAITJ
-ejEH8NmXAmyZP7b591Sfcv7ZAoGBAJnR9DM2MCLWPTsNLwdFPQpFcgMfA+qxK5jO
-HDBOzqqbf9Ro4aodQiBVW/KE5LIeHhwEkTMn4sCzgbpse4pbOKtmc7R+w3GlHvsq
-sY1BawXtEtuaCLcSi7jn65YHT3NmK9WTqLcP/x8BSQW5WPEQxHcdoTN4wBrfhyJa
-AoE2+tjRAoGAeqX21m+gV+zVETQM7xtBjNehB/+6iixG08Eyzh5LB6CoONLqLDiB
-HtIVMN98qvhJrNe5cPdldfqrbLojbn7f/i1pNmFKcnnfGzVOAnPxyhDPbtwz2pZh
-UNUK/CZLxqMtqYUt/swxadBwKC20aBGDa7XmcH9sv+8iGzD/ShI99gMCFA4OFyr2
-Cw5TpYTGAzhrAJY6ZlSc
------END DSA PRIVATE KEY-----</pre>
+      MIIBugIBAAKBgQCR/55IV3MkRjeKQhG1Myib6KELH+Sgycbw3MZRJHvpM89Qk1df
+      o8QBjISeYih/GVTH/9MexW5LJI1yQTSXUwAPoFS1SiOGhSwjdjVjyMLs/IFzDItO
+      ke33C+th823CvgDC/ZqWy2uNBe0GsRACuqXQGO3P15PcNIlDQcf7IS9ypQIVAJLC
+      kka/tq6pBtgtxdmq3XrYr4sRAoGAcZoBMoNEpJqJ8KuOdxe/5aEDVHcVDoiQnvbG
+      wrKxgSzBox4oITu5QPKrTmFdnel5rtpYiKbRLxI35UHvFmTPIObD84er/wjPxhNx
+      N1T8ekt2jFonq+gLcIo6bv03qsYXpfBY/+MRQT7WqMa0LzSMyPmQwqWjbnrdZ97Q
+      v2OZSTcCgYBDMfRrmpNjCfeNI84cTp5RUdgC+nSVWVRQ62yV5IRnry/tszDAiYXM
+      cykhTFIB8BSm1Exlj4057kc69I92NC+AiqCeSR+zbragW4Xfl7N6rxzeopuwJgqu
+      FyUUX/fSf6ZKn9sm3qYiopyELhK7hVizCcm7hHQuvPJRjsWbMods2wIURzdro9if
+      Bm8VhAgjWoeNbpwJIHM=
+      -----END DSA PRIVATE KEY-----</pre>
       <h2>Stuck?</h2>
       <p>If a position you're applying to has nothing to do with development or if you're simply stuck, you can always send us your resume at <a href="mailto:jobs@noisenewyork.com">jobs@noisenewyork.com</a> with the subject line as "Software Engineer - github" or with the appropriate position title you are applying to.</p>
    </div>
