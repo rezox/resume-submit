@@ -11,13 +11,13 @@ class Getcode extends CI_Controller {
          return;
       }
 
-      if (empty($_POST['name']))
+      if (empty($_POST['email']))
       {
          show_404();
          return;
       }
 
-      echo sha1($_POST['name']);
+      echo sha1($_POST['email']);
    }
 
 }
