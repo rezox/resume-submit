@@ -14,7 +14,7 @@ class Sendit extends CI_Controller {
       // If any of these are empty, its bad.
       if (empty($_POST['mydoc']) || empty($_FILES['myresume']))
       {
-         echo "You're missing something.";
+         echo "I need JSON object posted with the key 'mydoc' and a file posted with the key 'myresume'";
          return;
       }
 
