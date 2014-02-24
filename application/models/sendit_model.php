@@ -16,7 +16,7 @@ class Sendit_model extends CI_Model {
    public function move_file($path)
    {
       $temp_path = "/tmp/resume-".mt_rand().".pdf";
-      
+
       // renaming the file
       if (move_uploaded_file($path, $temp_path) === FALSE)
          return false;
@@ -37,9 +37,7 @@ class Sendit_model extends CI_Model {
    {
       if (empty($doc['full_name'])
          || empty($doc['email_address'])
-         || empty($doc['phone_number'])
-         || empty($doc['q1'])
-         || empty($doc['q2']))
+         || empty($doc['phone_number']))
          return false;
 
       return true;
@@ -52,11 +50,11 @@ class Sendit_model extends CI_Model {
       // clearing, just in case.
       $this->email->clear();
 
-      $this->email->from('jobs@noisenewyork.com', 'The Noise Team');
+      $this->email->from('noreply@urbancompass.com', 'The Urban Compass Team');
       $this->email->to($email);
-      $this->email->subject('Application Received');
+      $this->email->subject('Application Received!');
 
-      $message = "We're just letting you know that we've received your application and because you've got to the end, your application has been given priority. If our team deems you as a good match, we will get in contact with you.\n\n -- The Noise Team @ New York";
+      $message = "We're just letting you know that we've received your application and because you've got to the end, your application has been given priority. If our team deems you as a good match, we will get in contact with you.\n\n -- The Urban Compass Team";
 
       $this->email->message($message);
 
@@ -74,17 +72,11 @@ class Sendit_model extends CI_Model {
 
       // making message headers
       $this->email->from($doc['email_address'], $doc['full_name']);
-      //$this->email->to('steve@noisenewyork.com');
-      $this->email->to('jobs@noisenewyork.com');
+      $this->email->to('steve@urbancompass.com');
       $this->email->subject('Software Engineer - Priority');
 
       // making message body
       $message = "The applicant completed the application process.\n\n";
-      $message .= "Q. Write a snippet of code which shows a function ana variable within the same object using Javascript.\nA. ";
-      $message .= $doc['q1'];
-      $message .= "\n\nQ. Briefly explain what a MVC (Model-View-Controller) is and why it's not smart to run a a function call in a view.\nA. ";
-      $message .= $doc['q2'];
-      $message .= "\n\n";
       $message .= "Full Name:";
       $message .= $doc['full_name'];
       $message .= "\nEmail Address:";

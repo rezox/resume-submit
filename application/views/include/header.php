@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
    <meta name="keywords" content="">
    <meta name="author" content="">
 
-   <title>Noise Developer Application</title>
+   <title>Applying as a Software Engineer for Urban Compass</title>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
@@ -23,7 +23,7 @@
    <div class="row-fluid">
       <div id="logo" class="span4">
          <!--<img src="http://placehold.it/223x78" alt="logo" />-->
-         <img src="<?= base_url('assets/img/logo.jpg') ?>" alt="logo" width="233px" />
+         <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" width="600px" />
       </div>
       <div id="title" class="span8"><h2></h2></div>
    </div>

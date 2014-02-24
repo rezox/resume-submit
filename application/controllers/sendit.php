@@ -37,7 +37,7 @@ class Sendit extends CI_Controller {
       // checking for fields
       if (!$this->sendit_model->validate_doc($doc))
       {
-         echo "Missing fields in JSON document. Exepected fields: full_name email_address phone_number q1 q2";
+         echo "Missing fields in JSON document. Exepected fields: full_name email_address phone_number";
          return;
       }
 
