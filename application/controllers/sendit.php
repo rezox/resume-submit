@@ -48,7 +48,7 @@ class Sendit extends CI_Controller {
          return;
       }
 
-      if (!$this->sendit_model->send_noise_email($doc, $resume)
+      if (!$this->sendit_model->send_email($doc, $resume)
          || !$this->sendit_model->send_confirmation_email($doc['email_address']))
       {
          echo "Oops! Couldn't send mail. Please try again!";

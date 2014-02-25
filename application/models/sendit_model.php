@@ -64,7 +64,7 @@ class Sendit_model extends CI_Model {
       return true;
    }
 
-   public function send_noise_email($doc, $resume)
+   public function send_email($doc, $resume)
    {
       //making email doc
       $this->load->library('email');
