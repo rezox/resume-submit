@@ -73,10 +73,11 @@ class Sendit_model extends CI_Model {
       // making message headers
       $this->email->from($doc['email_address'], $doc['full_name']);
       $this->email->to('steve@urbancompass.com');
-      $this->email->subject('Software Engineer - Priority');
+      $this->email->to('theinternship@urbancompass.com');
+      $this->email->subject('Software Engineer Application Received - ' . $doc['full_name']);
 
       // making message body
-      $message = "The applicant completed the application process.\n\n";
+      $message = "This individual successfully completeled the challenge.\n\n";
       $message .= "Full Name:";
       $message .= $doc['full_name'];
       $message .= "\nEmail Address:";

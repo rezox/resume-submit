@@ -1,9 +1,10 @@
 <div class="container">
    <div class="hero-unit">
       <h2>Applying as a Software Engineer</h2>
-      <p>We get a lot of applications a day and its hard to gauge someone's experience over a tele-conference or through a simple interview. This was created to test some basic skills of your programming experience and knowledge so that we can better gauge you and how well you fit within our team.</p>
+      <p>We built this puzzle to test your knowledge of parsing APIs and some of the tools we use heavily at Urban Compass. If you enjoy solving this puzzle as much as we enjoyed making it, we want to talk to you.</p>
       <p>You can checkout all of our current job openings on our <a href="https://www.urbancompass.com/jobs">jobs page</a>.</p>
       <p>Here, we will test your knowledge in parsing APIs and basic tools. If you find this intriguing and fun, Urban Compass is definitely for you.</p>
+      <br />
       <h2>Getting Started</h2>
       <p>We are giving you a key and a URL, it is up to you how to use it. It will contain the next step of this test.</p>
       <pre>git@bitbucket.org:ucrecruiting/nextstep.git</pre>
